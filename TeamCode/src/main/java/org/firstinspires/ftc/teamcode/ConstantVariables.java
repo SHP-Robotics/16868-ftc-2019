@@ -1,10 +1,10 @@
 package org.firstinspires.ftc.teamcode;
 
 public class ConstantVariables {
-    public static final double K_CLAW_SERVO_1_OPEN = 0;
+    public static final double K_CLAW_SERVO_1_OPEN = 0.25;
     public static final double K_CLAW_SERVO_1_CLOSED = 0.5;
 
-    public static final double K_CLAW_SERVO_2_OPEN = 0;
+    public static final double K_CLAW_SERVO_2_OPEN = 0.75;
     public static final double K_CLAW_SERVO_2_CLOSED = 0.5;
 
     public static final int K_PPR_DRIVE = 1120;

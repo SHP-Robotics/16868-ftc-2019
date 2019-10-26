@@ -1,0 +1,4 @@
+#Fri Oct 25 16:14:24 PDT 2019
+base.0=/Users/lucypknox/Documents/GitHub/16868-ftc-2019/TeamCode/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

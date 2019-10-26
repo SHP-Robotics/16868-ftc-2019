@@ -25,11 +25,15 @@ public class MainTeleOp extends BaseRobot {
             arm1 (1);
         } else if (gamepad1.dpad_down) {
             arm1 (-1);
+        } else {
+            arm1(0);
         }
-        if (gamepad1.y) {
+        if (gamepad1.a) {
             arm2 (1);
-        } else if (gamepad1.a) {
+        } else if (gamepad1.y) {
             arm2 (-1);
+        } else {
+            arm2(0);
         }
 
         //base mover
@@ -37,6 +41,8 @@ public class MainTeleOp extends BaseRobot {
             base_mover(1);
         } else if (gamepad1.x) {
             base_mover(-1);
+        } else {
+            base_mover(0);
         }
 
         //claw

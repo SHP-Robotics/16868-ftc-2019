@@ -49,9 +49,9 @@ public class BaseRobot extends OpMode {
         rightFrontDriveMotor = hardwareMap.get(DcMotor.class, "rightFrontDriveMotor");
 
         armMotor1 = hardwareMap.get(DcMotor.class, "armMotor1");
-        armMotor2 = hardwareMap.get(DcMotor.class, "armMotor1");
+        armMotor2 = hardwareMap.get(DcMotor.class, "armMotor2");
 
-        baseMoverMotor = hardwareMap.get(DcMotor.class, "baseMotorMover");
+        baseMoverMotor = hardwareMap.get(DcMotor.class, "baseMoverMotor");
 
         claw_servo_1 = hardwareMap.get(Servo.class, "claw_servo_1");
         claw_servo_2 = hardwareMap.get(Servo.class, "claw_servo_2");
@@ -184,6 +184,7 @@ public class BaseRobot extends OpMode {
 
     public void base_mover(double power) {
         double speed = Range.clip(power, -1, 1);
+        baseMoverMotor.setPower(speed);
     }
 
     public void set_claw_servo_1(double pos) {
